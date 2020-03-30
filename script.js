@@ -1,18 +1,21 @@
-//for fix header
+$(document).ready(function () {
+  $('.submit').click(function (event) {
+    event.preventDefault()
+    console.log('Clicked button')
 
-// window.onscroll = function () {
-//   const docScrollTop = document.documentElement.scrollTop;
+    var name = $('.name').val()
+    var email = $('.email').val()
+    var message = $('.message').val()
+    var statusElm = $('.status')
+    statusElm.empty()
 
-//   if (window.innerWidth > 991) {
-//     if (doScrollTop > 100) {
-//       document.querySelector("header").classList.add("fixed")
-//     }
-//     else {
-//       document.querySelector("header").classList.remove("fixed")
-
-//     }
-//   }
-// }
+    if (email.includes('@') && email.includes('.')) {
+      statusElm.append('<div> Email is valid')
+    } else {
+      statusElm.append('<div> Email is not valid')
+    }
+  })
+})
 
 
 

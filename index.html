@@ -6,6 +6,7 @@
     <title>rajukhadkaportfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="swiper.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -499,8 +500,9 @@
                             <p> I will reply as soon as I get your messege</p>
                         </div>
                     </div>
+
                     <div class="container">
-                        <form id="contact" method="post" action="get_message.php">
+                        <form action="https://formspree.io/rajukhadka374@gmail.com" method="POST">
                             <div calss="col-6">
                                 <input name="name" type="text" class="form-control" name="" placeholder="Name">
                             </div>
@@ -516,7 +518,8 @@
                     </div>
                     <div class="row">
                         <div class="button text-center">
-                            <input type="submit" class="form-controm submit" value="SEND MESSAGE">
+                            <button type="submit" class="submit">SEND MESSAGE</button>
+                            <!-- <input type="submit" class="form-controm submit" value="SEND MESSAGE"> -->
                         </div>
                     </div>
                     </form>
