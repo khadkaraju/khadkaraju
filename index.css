@@ -156,8 +156,8 @@ header .navbar ul li a.active::before{
       margin-bottom: 32px;
   }
   .showcase-content .btn{
-      font-size: 34px;
-      padding: 16px 160px;
+      font-size: 15px;
+      padding: 8px 40px;
   }
   .btn{
       color: #fff;
@@ -214,7 +214,7 @@ header .navbar ul li a.active::before{
 label{
     margin-right: auto;
 }
-#about .container .about-content .about-text .social-links{
+/* #about .container .about-content .about-text .social-links{
     display: flex;
 }
 #about .container .about-content .about-text .social-links a{
@@ -238,7 +238,7 @@ label{
 }
 #about .container .about-content .about-text .social-links a:hover .fa{
     color: #000;
-}
+} */
 #about .about-image img{
     display: block;
     margin-left: 200px;
@@ -815,7 +815,7 @@ footer{
     background-color:#141414;
     margin-top: 20px;
 }
-footer .logo{
+.logo{
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
@@ -824,13 +824,13 @@ footer .logo{
     font-weight: 500; 
     text-transform: uppercase;
 }
-footer .social{
+.social{
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
     color: rgb(255, 253, 253);
 }
-footer .social a{
+.social a{
     color: rgb(255, 253, 253);
     text-decoration: none;
     display: inline-block;
@@ -838,8 +838,8 @@ footer .social a{
     transition: all .5s ease;
     
 }
-footer .social a:hover{
-    background-color: transparent;
+.social a:hover{
+    background-color: blueviolet;
 }
 #copyright{
     color: white;
