@@ -136,7 +136,7 @@ header .navbar ul li a.active::before{
 
   #showcase{
       background-image: url(images/giphy1.gif);
-      height: 500px;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       
