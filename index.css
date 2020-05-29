@@ -22,6 +22,7 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      max-width: 100%;
   }
   .text-primary{
     color: #3693ff;
@@ -43,6 +44,7 @@ body {
 }
 header{
       position: absolute;
+      max-width: 100%;
       left: 0px;
       right: 0px;
       border-bottom: .5px solid #423940;
@@ -50,6 +52,7 @@ header{
       z-index: 10;
       position: fixed;
       background-color: rgb(87, 78, 105);
+      
     
       
   }
@@ -59,11 +62,12 @@ header{
       
   } */
 
- header .navbar{
+ .navbar{
     display: flex;
     color:#fff;
     top: 0;
     z-index: 1;
+    
 
 }
 .brand-name a{
@@ -214,36 +218,13 @@ header .navbar ul li a.active::before{
 label{
     margin-right: auto;
 }
-/* #about .container .about-content .about-text .social-links{
-    display: flex;
-}
-#about .container .about-content .about-text .social-links a{
-    height: 30px;
-    width: 30px;
-    background-color: #000000;
-    border-radius: 3px;
-    display: inline-block;
-    border: 1px solid#000;
-    line-height: 28px;
-    text-align: center;
-    margin:0 1px;
-}
-#about .container .about-content .about-text .social-links a:hover{
-    background-color: transparent;
 
-}
-#about .container .about-content .about-text .social-links a .fa{
-    color: #fff;
-    font-size: 18px; 
-}
-#about .container .about-content .about-text .social-links a:hover .fa{
-    color: #000;
-} */
 #about .about-image img{
     display: block;
-    margin-left: 200px;
-    width: 75%;
-    border-radius: 60%;
+    margin-left: 90px;
+    max-width: 60%;
+    max-height: 50%;
+    border-radius: 50%;
 
     font-size: 80%;
     text-align: center;
@@ -281,10 +262,10 @@ label{
 
 }
 #L-Projects{
-    padding: 70px 0px 500px 0px;
+    padding: 70px 100px 100px 100px;
 }
 
-#L-Projects .projects{
+/* #L-Projects .projects{
     padding: 0px 40px 0px 40px;
     display: flex;
     flex-wrap: wrap;
@@ -292,19 +273,73 @@ label{
     align-items: center;
     
     
-}
+} */
+
+
+
 
 
 .card{
+    display:inline-block;
     position: relative;
     background: #ffffff;
-    width: 450px;
-    height: 500px;
+    max-width: 450px;
+    max-height: 500px;
     margin: 0 0;
-    border: 5px solid black;
+    justify-content: space-around;
+    
 
    
 }
+
+.card .imageC{
+    display: flex;
+    height: 350px;
+    max-width: 100%;
+    border: 1px  solid black;
+    
+
+}
+.card .task{
+    font-weight: 500;
+}
+.card .desc{
+    border: 1px  solid black;
+    
+}
+.card .project-des{
+    padding: 20px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.card .project-des h4{
+    font-size: 20px;
+}
+
+.card  .period p{
+    padding: 0px 0px 10px 0px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.card .details{
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.card .details a{
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid#262626;
+    color: #262626;
+    font-weight: 600;
+}
+.card .details a:hover{
+    background-color: yellowgreen;
+}
+    
+/*
 .card .p-image{
     display: inline-block;
 }
@@ -378,7 +413,7 @@ label{
 .card .sliderText h3{
     color: #fff;
     font-size: 48px;
-}
+} */
 .swiper-wrapper{
     width: auto;    
     
@@ -391,23 +426,85 @@ label{
     width: 400px;
 
 }
+.sliderText{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    
+
+}
+.sliderText h3{
+    color: #fff;
+    font-size: 48px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
 
 
 
 
-#Latest-projects{
+#experience{
+    max-height: 1000px;
     padding: 50px 200px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
     
     
 }
 
-#Latest-projects .project-content{
+#experience .project-content{
     top: 35%;
     left: 45%;
 }
 
-#Latest-projects .project-content .slide1{
+#experience .project-content .slide1{
     height: 250px;
     width: 150px;
     position: absolute;
