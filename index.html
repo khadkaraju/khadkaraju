@@ -19,12 +19,12 @@
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <!-- <li><a href="">Home</a></li> -->
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#L-Projects">Projects</a></li>
                         <li><a href="#media">Medias</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
 
                     </ul>
                 </div>
@@ -347,9 +347,10 @@
             <h2 class="section-title text-center">
                 Experiences </h2>
         </div>
-        <div class="swiper-container">
+        <div class="exp-container">
+            <!-- <div class="swiper-container"> -->
 
-            <div class="swiper-wrapper">
+            <!-- <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slider-row">
                         <div class="card">
@@ -458,6 +459,44 @@
 
 
 
+            </div> -->
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Feed Forward and Backprop
+                    NN</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Weather Report App</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Classic Game in JAVA</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Classic Game in Python</button>
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">LabVIEW</button>
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Eagle Cad</button>
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">LTSpice</button>
+            </div>
+
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
             </div>
         </div>
         </div>
@@ -727,7 +766,24 @@
     <script src="swiper.min.js"></script>
     <script src="script.js"></script>
     <script src="//code.tidio.co/dzm7p3nn5a1h3zzeoh4kjhichmwy6ptq.js" async></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>
