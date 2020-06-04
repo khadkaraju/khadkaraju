@@ -265,15 +265,7 @@ label{
     padding: 70px 100px 100px 100px;
 }
 
-/* #L-Projects .projects{
-    padding: 0px 40px 0px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-} */
+
 
 
 
@@ -342,81 +334,7 @@ label{
     background-color: yellowgreen;
 }
     
-/*
-.card .p-image{
-    display: inline-block;
-}
-.card .cardHeading{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    
-}
-.card .cardHeading h3{
-    color: #fff;
-    font-size: 48px;
-}
 
-.card  .period p{
-    font-size: 10px;
-    font-weight: 500;
-}
-.card .project-des{
-    padding: 10px 0px 0px 0px;
-    font-size: 15px;
-    font-weight: 600;
-    
-}
-.card .project-des .task{
-    font-weight: 500;
-
-}
-.card .project-des a{
-    display: inline-block;
-    margin: 10px 0 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 2px solid#262626;
-    color: #262626;
-    font-weight: 600;
-}
-
-
-
-
-.card .content{
-    width: 400px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.card .content a{
-    display: inline-block;
-    margin: 10px 0 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 2px solid#262626;
-    color: #262626;
-    font-weight: 600;
-}
-
-
-.card .sliderText{
-    position: relative;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-    
-
-}
-.card .sliderText h3{
-    color: #fff;
-    font-size: 48px;
-} */
 .swiper-wrapper{
     width: auto;    
     
@@ -492,7 +410,7 @@ label{
 
 
 #experience{
-    max-height: 2000px;
+    max-height: 100%;
     padding: 50px 200px;
     padding: 30px;
     text-align: center;
@@ -507,7 +425,7 @@ label{
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    overflow: scroll;
     text-align: center;
 }
 
@@ -570,99 +488,6 @@ label{
     height: 300px;
   }
 
-
-
-/* #Latest-projects .project-content{
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    
-    
-} 
-.project1-img{
-    height: 400px;
-    width: 400px;
-    background-image: url("images/image1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.project2-img{
-    height: 400px;
-    width: 400px;
-    background-image: url("images/image1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.project3-img{
-    height: 400px;
-    width: 400px;
-    background-image: url("images/image1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-/* #media .media-contents{
-    position: absolute;
-
-}
-#media .media-buttons{
-    flex: 0 0 100%;
-    max-width:  100%;
-}
-#media .media-buttons ul{
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-#media .media-buttons ul li{
-
-    color: red;
-    font-size: 16px;
-    font-weight: 600;
-    display: inline-block;
-    margin: 0px 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding-bottom: 0px;
-}
-#media .media-buttons ul li:hover{
-    color: green;
-    border-bottom: 2px solid blue;
-
-} */
-/* #media .gallery{
-    
-    flex: 0 0 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-#media .gallery .item{
-    flex: 0 0 calc(33.33% - 8px) ;
-    max-width: calc(33.33% - 8px) ;
-    margin-bottom: 22px;
-    text-align: center;
-
-}
-
-
-#media .gallery .item .gal1{
-    background-image: url(images/image1.jpg);
-    
-}
-
-#media .gallery .item .gal h4{
-    color: red;
-    background-color: blue;
-
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-} */
 
 .slide-container{
     width: 800px;
@@ -831,50 +656,6 @@ label{
 
 
 }
-
-
-
-
-
-
-
-#testimonials .testimonial-content .testimonial-slider .slide{
-    background-color: #ffffff;
-    margin-bottom: 15px;
-    border: 1px solid#eeeeee;
-    padding: 20px 20px;
-    border-radius: 4px;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#testimonials .testimonial-content .testimonial-slider .slide .containerr {
-    margin-right: 40px;
-    height: 100px;
-    width: 100px;
-}
-#testimonials .testimonial-content .testimonial-slider .slide .image .image1{
-    background-image: url("images/image1.jpg");
-    height: 120px;
-    width: 120px;
-    border-radius: 70px;
-}
-
-#testimonials .testimonial-content .testimonial-slider .slide p{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #838388;
-    margin: 0 0 10px;
-}
-#testimonials .testimonial-content .testimonial-slider .slide h6{
-    font-size: 15px;
-    font-weight: 600;
-    color: #000000;
-    margin: 10px 0 10px;
-}
-
-
 
 
 
