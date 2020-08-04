@@ -194,7 +194,7 @@ header .navbar ul li a.active::before{
 #about .about-text,
 #about .about-image
 {
-    flex: 1;
+    flex:   1;
 }
 #about .about-text{
     text-align: center;
@@ -224,10 +224,10 @@ label{
     margin-left: 90px;
     max-width: 60%;
     max-height: 50%;
-    border-radius: 50%;
+    border-radius: 0%;
 
-    font-size: 80%;
-    text-align: center;
+    font-size: 0%;
+    text-align: auto;
     padding-bottom: 8px;
     margin-top: 5px;
 }
@@ -326,12 +326,14 @@ label{
     margin: 10px 0 0;
     padding: 10px 20px;
     text-decoration: none;
-    border: 2px solid#262626;
+    border: 1px solid#262626;
     color: #262626;
     font-weight: 600;
+    font-size: large;
 }
 .card .details a:hover{
-    background-color: yellowgreen;
+    background-color: rgb(111, 211, 224);
+    
 }
     
 
