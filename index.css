@@ -204,7 +204,7 @@ header .navbar ul li a.active::before{
     flex:   1;
 }
 #about .about-text{
-    text-align: auto;
+    text-align: center;
     margin-left: auto;
 }
 #about .container .about-content .about-text .info{
@@ -230,9 +230,9 @@ label{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
-    max-height: 50%;
-    border-radius: 0%;
+    max-width: 18%;
+    max-height: 30%;
+    border-radius: 5%;
 
     font-size: 0%;
     text-align: auto;
