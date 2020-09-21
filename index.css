@@ -25,7 +25,7 @@ body {
   
 }
   .row{
-      display: flex;
+      display:inline-flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
@@ -276,15 +276,18 @@ label{
 }
 #L-Projects{
     padding: 70px 100px 100px 100px;
+    max-width: 100%;
     
 }
 
 
 
-#L-Projects .project{
+.project{
 
     
-    max-width: 100%;
+    max-width: 5000px;
+    max-height: 100%;
+   
     flex: 1;
     padding: 10px;
     margin: 0px 30px 0px 0px;
